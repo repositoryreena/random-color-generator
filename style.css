@@ -1,0 +1,46 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Prevents scrolling if the content overflows */
+}
+
+/* Heading styling */
+h1 {
+    margin: 20px 0; /* Space above and below the heading */
+}
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns with equal width */
+    grid-template-rows: repeat(5, 1fr);    /* 5 rows with equal height */
+    gap: 15px; /* Space between divs */
+    width: 95vw; /* Grid container width */
+    height: 85vh; /* Grid container height */
+    box-sizing: border-box; /* Includes padding and border in width and height */
+    padding: 15px; /* Padding inside the grid container */
+    margin: 20px; /* Margin around the grid container */
+}
+
+/* Individual color divs */
+.grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px; /* Larger font size */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+    box-sizing: border-box; /* Includes padding and border in width and height */
+    width: 100%; /* Full width of the grid cell */
+    height: 100%; /* Full height of the grid cell */
+}
